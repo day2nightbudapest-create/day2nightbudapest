@@ -1,0 +1,95 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#000;
+color:white;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#000;
+}
+
+.logo{
+height:45px;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#C9A44C;
+font-weight:600;
+}
+
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+url("hero.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+color:#C9A44C;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+background:#C9A44C;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.section{
+padding:80px 10%;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#111;
+border-radius:15px;
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+margin-top:15px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#111;
+margin-top:60px;
+}
