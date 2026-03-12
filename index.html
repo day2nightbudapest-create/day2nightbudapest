@@ -1,304 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Day2Night Budapest Pub Crawl</title>
-
-<style>
-
-body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#000;
-color:white;
-}
-
-/* NAVBAR */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-background:#000;
-position:sticky;
-top:0;
-}
-
-nav h2{
-color:#C9A44C;
-margin:0;
-}
-
-/* HERO */
-
-.hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(#000,#111);
-padding:40px;
-}
-
-.hero h1{
-font-size:60px;
-color:#C9A44C;
-margin-bottom:10px;
-}
-
-.hero p{
-max-width:600px;
-font-size:20px;
-opacity:0.9;
-}
-
-.button{
-margin-top:30px;
-padding:15px 35px;
-font-size:18px;
-border:none;
-border-radius:40px;
-background:#C9A44C;
-cursor:pointer;
-text-decoration:none;
-color:black;
-font-weight:bold;
-}
-
-/* SECTIONS */
-
-.section{
-padding:90px 10%;
-text-align:center;
-}
-
-.section h2{
-color:#C9A44C;
-margin-bottom:40px;
-}
-
-/* FEATURES */
-
-.features{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
-}
-
-.feature{
-background:#111;
-padding:30px;
-border-radius:20px;
-}
-
-/* STEPS */
-
-.steps{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:30px;
-}
-
-.step{
-background:#111;
-padding:25px;
-border-radius:20px;
-}
-
-/* BOOKING FORM */
-
-form{
-max-width:500px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-input, select{
-padding:12px;
-border-radius:6px;
-border:none;
-}
-
-.pay-button{
-margin-top:20px;
-padding:15px;
-background:#C9A44C;
-border:none;
-border-radius:30px;
-font-size:18px;
-cursor:pointer;
-}
-
-/* FOOTER */
-
-footer{
-padding:40px;
-text-align:center;
-opacity:0.6;
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-.features{
-grid-template-columns:1fr;
-}
-
-.steps{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:40px;
-}
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
-
 <body>
 
+<header>
+
+<div class="nav">
+
+<img src="logo.png" class="logo">
 
 <nav>
 
-<h2>Day2Night Budapest</h2>
-
-<a href="#booking" class="button">Book</a>
+<a href="index.html">Home</a>
+<a href="booking.html">Booking</a>
+<a href="about.html">About</a>
 
 </nav>
 
+</div>
+
+</header>
 
 
 <section class="hero">
 
+<div>
+
 <h1>Budapest Pub Crawl</h1>
 
 <p>
-Experience Budapest's legendary ruin bar nightlife with travelers from around the world.
+Experience Budapest’s legendary ruin bar nightlife with travelers from around the world.
 </p>
 
-<a href="#booking" class="button">Reserve Your Spot</a>
+<a href="booking.html" class="btn">Book Your Spot</a>
+
+</div>
 
 </section>
-
 
 
 <section class="section">
 
 <h2>The Experience</h2>
 
-<div class="features">
+<div class="cards">
 
-<div class="feature">
+<div class="card">
+
+<img src="ruinbar.jpg">
+
 <h3>Ruin Bars</h3>
-<p>Discover Budapest’s iconic ruin bars and vibrant nightlife.</p>
+
+<p>Discover Budapest’s famous ruin bar culture.</p>
+
 </div>
 
-<div class="feature">
+
+<div class="card">
+
+<img src="party.jpg">
+
 <h3>Meet Travelers</h3>
+
 <p>Connect with people from around the world.</p>
+
 </div>
 
-<div class="feature">
+
+<div class="card">
+
+<img src="karaoke.jpg">
+
 <h3>Karaoke Stop</h3>
-<p>End the night singing with the group.</p>
+
+<p>Sing and celebrate the night together.</p>
+
 </div>
 
 </div>
 
 </section>
-
 
 
 <section class="section">
 
-<h2>How It Works</h2>
+<h2>Ready for the Night?</h2>
 
-<div class="steps">
+<p>Join the Day2Night Budapest Pub Crawl.</p>
 
-<div class="step">
-<h3>1</h3>
-<p>Reserve your ticket online.</p>
-</div>
-
-<div class="step">
-<h3>2</h3>
-<p>Meet the group at the starting bar.</p>
-</div>
-
-<div class="step">
-<h3>3</h3>
-<p>Explore ruin bars together.</p>
-</div>
-
-<div class="step">
-<h3>4</h3>
-<p>Party from 20:00 until 01:00.</p>
-</div>
-
-</div>
+<a href="booking.html" class="btn">Reserve Your Spot</a>
 
 </section>
-
-
-
-<section class="section" id="booking">
-
-<h2>Book Your Spot</h2>
-
-<form action="https://formspree.io/f/xreykqww" method="POST">
-
-<input type="text" name="name" placeholder="Full Name" required>
-
-<input type="email" name="email" placeholder="Email" required>
-
-<select name="tickets">
-
-<option>1 Ticket</option>
-<option>2 Tickets</option>
-<option>3 Tickets</option>
-<option>4 Tickets</option>
-
-</select>
-
-<input type="date" name="date" required>
-
-<input type="text" name="country" placeholder="Country of Birth">
-
-<input type="text" name="referral" placeholder="Referral Code">
-
-<button class="pay-button" type="submit">
-Submit Booking
-</button>
-
-</form>
-
-<br>
-
-<a href="https://revolut.me/sofiaeztz" class="button">
-Pay with Revolut
-</a>
-
-</section>
-
 
 
 <footer>
 
-© Day2Night Budapest
+<p>© Day2Night Budapest</p>
 
 </footer>
 
